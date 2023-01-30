@@ -6,6 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
     <style>
+        #about-us {
+            padding: 50px;
+            text-align: center;
+            background-color: #f2f2f2;
+            color: #333;
+        }
+
+            #about-us h2 {
+                font-size: 36px;
+                font-weight: bold;
+                margin-bottom: 20px;
+            }
+
+            #about-us p {
+                font-size: 18px;
+                line-height: 1.5;
+            }
+
         body {
             margin: 0;
             font-family: Arial, Helvetica, sans-serif;
@@ -90,11 +108,11 @@
                 }
         }
 
-        #whatsup-button {
+        #whatsup-button{
             position: fixed;
             bottom: 20px;
             right: 20px;
-            width: 50px;
+            width: 100px;
             height: 50px;
             border-radius: 25px;
             background-color: #04AA6D;
@@ -104,23 +122,11 @@
             align-items: center;
             cursor: pointer;
         }
-
-            #whatsup-button:before {
-                content: "\f232";
-                font-family: "Font Awesome 5 Free";
-                font-size: 20px;
-            }
-
-        #contact-buttons {
+        #call-us-button {
             position: fixed;
-            bottom: 20px;
+            bottom: 80px;
             right: 20px;
-            display: flex;
-            flex-direction: column;
-        }
-
-        #whatsup-button, #call-us-button {
-            width: 50px;
+            width: 100px;
             height: 50px;
             border-radius: 25px;
             background-color: #04AA6D;
@@ -129,23 +135,12 @@
             justify-content: center;
             align-items: center;
             cursor: pointer;
-            text-decoration: none;
-            margin-bottom: 10px;
         }
+          
 
-            #whatsup-button:before, #call-us-button:before {
-                font-size: 20px;
-            }
+      
 
-            #whatsup-button:before {
-                content: "\f232";
-                font-family: "Font Awesome 5 Free";
-            }
-
-            #call-us-button:before {
-                content: "\f095";
-                font-family: "Font Awesome 5 Free";
-            }
+     
     </style>
     <script>
         function myFunction() {
@@ -182,15 +177,15 @@
         <img src="Home.jpg" alt="Home img" style="width:100%;height:500px;">
     </div>
 
-    <div style="left">
-        <img src="Home.jpg" alt="Home img" style="width:35%;height:300px;">
-    </div>
-    <p>psmsdjnsjdbnkjsdkbsdkjbkjdsbhbusndblkjnsdlbosbs</p>
-    <button id="whatsup-button"></button>
+
+   
     <a href="https://wa.me/8660414371" id="whatsup-button">What's Up</a>
-    <div id="contact-buttons">
-        <a href="https://wa.me/8660414371" id="whatsup-button"></a>
-        <a href="tel:8660414371" id="call-us-button"></a>
+        <a href="tel:8660414371" id="call-us-button">Call Us</a>
+    
+
+    <div id="about-us">
+        <h2>About Us</h2>
+        <p>We are a construction business based in Mysore, providing quality building and renovation services to our clients. With years of experience and a team of skilled professionals, we strive to exceed our clients' expectations in every project we undertake. Our focus is on delivering projects on time, within budget and to the highest standards. Contact us today to see how we can help you with your next construction project.</p>
     </div>
 </body>
 </html>
